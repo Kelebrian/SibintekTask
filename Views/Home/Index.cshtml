@@ -1,0 +1,50 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Tasks</title>
+    <script async src="~/Scripts/script.js"></script>
+    <link rel="stylesheet" type="text/css" href="~/Content/style.css" />
+</head>
+<body>
+    <div class="content">
+        <div class="btns">
+            <button id="addtask">Добавить задачу</button>
+            <button id="deletetask" disabled>Удалить задачу</button>
+            <button id="deleteall">Удалить все</button>
+        </div>
+        <div id="taskblock" class="taskblock">
+            <table class="tasklist">
+                <tbody id="tasklist">
+                    <tr>
+                        <th class="checks"></th>
+                        <th class="left-border table-header">I want to...</th>
+                    </tr>
+                    <tr id="helper">
+                        <th class="checks"></th>
+                        <th class="left-border">
+                            <input />
+                        </th>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="row-count">
+            <table class="tasklist">
+                <tr>
+                    <th class="checks"></th>
+                    <th class="left-border table-footer" id="footer">Count tasks</th>
+                </tr>
+            </table>
+        </div>
+
+    </div>
+</body>
+</html>
+
+
